@@ -5,6 +5,7 @@ var confirmNumber;
 var confirmCharacter;
 var confirmUppercase;
 var confirmLowercase;
+var choices;
 // Start variable values: 
 character = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
 number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -30,8 +31,33 @@ generateBtn.addEventListener("click", function () {
      } else if (enter >= 8 && enter <= 128) {
         alert('Your password will be ' + enter + ' characters long.');
         confirmLowercase = confirm("Would you like to use Lowercase Letters in your password?");
-        confirmUppercase - confirm("Would you like to use Uppercase Letters in your password?");
+          if (confirmLowercase === true) {
+            alert("Your password will include Lowercase letters.")
+          } else {
+            alert("Your password will NOT include Lowercase letters.")
+          }
+        confirmUppercase = confirm("Would you like to use Uppercase Letters in your password?");
+          if (confirmUppercase === true) {
+            alert("Your password will include Uppercase letters.")
+          } else {
+            alert("Your password will NOT include Uppercase letters.")
+          }
         confirmNumber = confirm("Would you like to use Numbers in your password?");
+          if (confirmNumber === true) {
+            alert("Your password will include Numbers.")
+          } else {
+            alert("Your password will NOT include Numbers.")
+          }
         confirmCharacter = confirm("Would you like to use Special Characters in your password?");
+          if (confirmCharacter === true) {
+            alert("Your password will include Special Characters.")
+          } else {
+            alert("Your password will NOT include Special Characters.")
+          }
   } 
 };
+
+// If user chooses "cancel" on all 4 variables
+if (!confirmCharacter && !confirmNumber && !confirmUppercase &&  confirmLowercase) {
+    choices = alert ("Please choose at least 1 password criteria!");
+}
