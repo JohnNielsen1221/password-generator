@@ -19,8 +19,9 @@ Should scale appropriately with different screen sizes.
 ## Status
 Project is: _complete_ (for now)
 
-## Link
-JohnNielsen1221.github.io/JHN-Portfolio/
+## Links
+Live Page Link - https://johnnielsen1221.github.io/password-generator/
+Respository Link - https://github.com/JohnNielsen1221/password-generator
 
 ## Contact
-Created by John Nielsen - johnhayesnielsen@gmail.com
+Created by John Hayes Nielsen - johnhayesnielsen@gmail.com
